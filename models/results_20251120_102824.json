@@ -1,0 +1,13 @@
+{
+    "r2_score": 0.628145084718972,
+    "mae": 21838.98128377071,
+    "cv_mean_r2": 0.5972998226034495,
+    "best_params": {
+        "model__num_leaves": 50,
+        "model__n_estimators": 800,
+        "model__min_child_samples": 20,
+        "model__max_depth": -1,
+        "model__learning_rate": 0.05
+    },
+    "timestamp": "20251120_102824"
+}

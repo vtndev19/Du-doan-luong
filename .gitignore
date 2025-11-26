@@ -1,0 +1,13 @@
+# Ignore thư mục virtual environment
+.venv/
+
+# Ignore file nặng
+postings.csv
+*.csv
+
+# Ignore file nén
+*.zip
+*.rar
+
+# Ignore log
+*.log
