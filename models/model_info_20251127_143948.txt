@@ -1,0 +1,21 @@
+=== THÔNG TIN MÔ HÌNH LIGHTGBM (TUNED) ===
+
+Thời gian tạo: 20251127_143948
+Số lần thử nghiệm (n_iter): 50
+
+=== KẾT QUẢ TEST ===
+R2 Score: 0.6370
+MAE: 21,264
+
+CV Mean R2 (Training): 0.6049
+
+=== BỘ THAM SỐ TỐI ƯU ===
+model__colsample_bytree: 0.6
+model__learning_rate: 0.05
+model__max_depth: 20
+model__min_child_samples: 13
+model__n_estimators: 1500
+model__num_leaves: 48
+model__reg_alpha: 1
+model__reg_lambda: 5
+model__subsample: 0.8

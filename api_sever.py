@@ -79,7 +79,7 @@ def load_model():
     print("Đang tìm model trong thư mục /models...")
 
     model_dir = "models"
-    files = glob.glob(os.path.join(model_dir, "lightgbm_model_*.pkl"))
+    files = glob.glob(os.path.join(model_dir, "lightgbm_tuned_model_*.pkl"))
 
     if not files:
         print("KHÔNG TÌM THẤY MODEL!")
