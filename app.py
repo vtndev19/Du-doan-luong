@@ -196,7 +196,7 @@ param_dist = {
 }
 
 # 2. Tạo Pipeline cho LightGBM cần tối ưu
-pipeline_lgbm_tuned = Pipeline([
+pipeline_lgbm_tuned = Pipeline([ghit
     ('pre', preprocessor),
     ('model', LGBMRegressor(random_state=42, n_jobs=-1, verbose=-1))
 ])

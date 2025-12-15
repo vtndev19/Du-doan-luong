@@ -112,12 +112,13 @@ def predict(job: JobPosting):
     global model_pipeline
 
     print("\n=== NHẬN REQUEST /predict ===")
-    print("DATA NHẬN ĐƯỢC:", job.dict())
+    data = job.model_dump()
+    print("DATA NHẬN ĐƯỢC:", data)
 
     if model_pipeline is None:
-        raise HTTPException(500, "Model chưa được load")
+        raise HTTPException(status_code=500, detail="Model chưa được load")
 
-    df = pd.DataFrame([job.dict()])
+    df = pd.DataFrame([data])
     df_ready = preprocess_input(df)
 
     pred = float(model_pipeline.predict(df_ready)[0])
@@ -128,7 +129,6 @@ def predict(job: JobPosting):
         "title": job.title,
         "predicted_salary": pred
     }
-
 # ======================================================================
 # 7. API DỰ ĐOÁN NHIỀU JOB
 # ======================================================================
