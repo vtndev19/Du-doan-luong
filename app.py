@@ -33,13 +33,12 @@ print("--- Bắt đầu chương trình: So sánh LightGBM, XGBoost và Ridge --
 # BƯỚC 1 & 2: TẢI VÀ LỌC DỮ LIỆU
 # ======================================================================
 
-file_name = 'D:\\XGB\\postings.csv' # Đường dẫn file của bạn
+file_name = 'D:\\XGB\\postings.csv' 
 try:
     df = pd.read_csv(file_name)
     print(f"Tải dữ liệu thành công. Shape: {df.shape}")
 except FileNotFoundError:
     print(f"LỖI: Không tìm thấy tệp '{file_name}'.")
-    # Tạo dữ liệu giả lập để test code nếu không có file thật (Comment dòng dưới nếu chạy thật)
     # raise
     df = pd.DataFrame() 
 
